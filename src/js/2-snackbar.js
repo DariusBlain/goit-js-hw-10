@@ -29,8 +29,8 @@ function createPromise(event) {
             position: 'topRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
             progressBarColor: 'rgb(50, 97, 1)',
             backgroundColor: 'rgb(89, 161, 13)',
-            iconUrl: './img/succes.svg',
-            message: `Fulfilled promise in ${delay}ms`,
+            iconUrl: './src/img/succes.svg',
+            message: `Fulfilled promise in ${delay} ms`,
             messageColor: 'rgb(255, 255, 255)',
           })
         );
@@ -42,8 +42,8 @@ function createPromise(event) {
             position: 'topRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
             progressBarColor: 'rgb(181, 27, 27)',
             backgroundColor: 'rgb(239, 64, 64)',
-            iconUrl: './img/error.svg',
-            message: `Rejected promise in ${delay}ms`,
+            iconUrl: './src/img/error.svg',
+            message: `Rejected promise in ${delay} ms`,
             messageColor: 'rgb(255, 255, 255)',
           })
         );
