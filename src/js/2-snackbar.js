@@ -37,7 +37,6 @@ function createPromise(event) {
       }, delay);
     } else {
       setTimeout(() => {
-        console.log(`❌ Rejected promise in ${delay}ms`);
         reject(
           iziToast.error({
             position: 'topRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
