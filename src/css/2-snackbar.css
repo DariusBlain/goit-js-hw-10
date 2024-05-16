@@ -44,7 +44,7 @@
   margin-top: 8px;
   border: 1px solid #808080;
   border-radius: 4px;
-  width: 326px;
+  width: 324px;
   height: 38px;
   padding: 0 16px;
   outline: none;
@@ -71,7 +71,7 @@ input[type='number']::-webkit-outer-spin-button {
   width: 332px;
   height: 64px;
   padding-top: 24px;
-  margin-bottom: 24px;
+  margin: 16px 0 24px 0;
 }
 
 .fieldset:hover {
