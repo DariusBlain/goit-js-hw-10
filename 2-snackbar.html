@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/assets/favicon-45d92abd.svg" />
+    
+    <title>Serhii Syrov: Snackbar</title>
+    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-77e16229.js">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-7a007824.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/styles-dde47cee.css">
+  </head>
+  <body>
+    <a href="./index.html">Go to home</a>
+
+    <section class="container-snackbar">
+      <form class="form">
+        <label class="label"> Delay (ms) </label>
+        <div class="input-container">
+          <button class="decrement-btn arrows" type="button">
+            <img src="/vanilla-app-template/assets/decrement-btn-3a2726c4.svg" width="12" height="8" />
+          </button>
+          <input
+            class="input-value"
+            type="number"
+            name="delay"
+            id="input-number"
+            required
+          />
+          <button class="increment-btn arrows" type="button">
+            <img src="/vanilla-app-template/assets/increment-btn-bb7e661f.svg" width="12" height="8" />
+          </button>
+        </div>
+
+        <fieldset class="fieldset">
+          <legend class="label">State</legend>
+          <label class="label label-input-radio">
+            <input
+              class="input-radio"
+              type="radio"
+              name="state"
+              value="fulfilled"
+              required
+            />
+            Fulfilled
+          </label>
+          <label class="label label-input-radio">
+            <input
+              class="input-radio"
+              type="radio"
+              name="state"
+              value="rejected"
+              required
+            />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button class="btn-fieldset" type="submit">Create notification</button>
+      </form>
+    </section>
+    
+  </body>
+</html>
