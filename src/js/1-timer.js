@@ -34,7 +34,6 @@ const options = {
     } else {
       btn.disabled = false;
       userSelectedDate = selectedDates[0];
-      console.log(userSelectedDate);
     }
   },
 };
