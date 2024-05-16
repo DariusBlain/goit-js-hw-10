@@ -15,10 +15,6 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
 const form = document.querySelector('.form');
-const inputValue = document.querySelector('#input-number');
-const radioFulfilled = document.querySelector('[value="fulfilled"]');
-const radioRejected = document.querySelector('[value="rejected"]');
-const btnSubmit = document.querySelector('.btn-fieldset');
 
 function createPromise(event) {
   event.preventDefault();
@@ -33,7 +29,7 @@ function createPromise(event) {
             position: 'topRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
             progressBarColor: 'rgb(50, 97, 1)',
             backgroundColor: 'rgb(89, 161, 13)',
-            iconUrl: '../img/succes.svg',
+            iconUrl: './img/succes.svg',
             message: `Fulfilled promise in ${delay}ms`,
             messageColor: 'rgb(255, 255, 255)',
           })
@@ -47,7 +43,7 @@ function createPromise(event) {
             position: 'topRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
             progressBarColor: 'rgb(181, 27, 27)',
             backgroundColor: 'rgb(239, 64, 64)',
-            iconUrl: '../img/x-overlay-message.svg',
+            iconUrl: './img/error.svg',
             message: `Rejected promise in ${delay}ms`,
             messageColor: 'rgb(255, 255, 255)',
           })
