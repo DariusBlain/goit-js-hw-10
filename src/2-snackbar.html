@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Serhii Syrov: Snackbar</title>
+  </head>
+  <body>
+    <a href="./index.html">Go to home</a>
+
+    <section class="container-snackbar">
+      <form class="form">
+        <label class="label"> Delay (ms) </label>
+        <div class="input-container">
+          <button class="decrement-btn arrows" type="button">
+            <img src="./img/decrement-btn.svg" width="12" height="8" />
+          </button>
+          <input
+            class="input-value"
+            type="number"
+            name="delay"
+            id="input-number"
+            required
+          />
+          <button class="increment-btn arrows" type="button">
+            <img src="./img/increment-btn.svg" width="12" height="8" />
+          </button>
+        </div>
+
+        <fieldset class="fieldset">
+          <legend class="label">State</legend>
+          <label class="label label-input-radio">
+            <input
+              class="input-radio"
+              type="radio"
+              name="state"
+              value="fulfilled"
+              required
+            />
+            Fulfilled
+          </label>
+          <label class="label label-input-radio">
+            <input
+              class="input-radio"
+              type="radio"
+              name="state"
+              value="rejected"
+              required
+            />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button class="btn-fieldset" type="submit">Create notification</button>
+      </form>
+    </section>
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
+</html>
