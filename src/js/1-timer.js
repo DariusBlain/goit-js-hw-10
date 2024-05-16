@@ -27,7 +27,7 @@ const options = {
         position: 'topRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
         progressBarColor: 'rgb(181, 27, 27)',
         backgroundColor: 'rgb(239, 64, 64)',
-        iconUrl: '../img/error.svg',
+        iconUrl: '/src/img/error.svg',
         message: 'Please choose a date in the future',
         messageColor: 'rgb(255, 255, 255)',
       });
