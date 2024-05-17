@@ -26,7 +26,7 @@ const options = {
   onClose(selectedDates) {
     if (Number(selectedDates[0]) <= Date.now()) {
       iziToast.error({
-        position: 'topRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
+        position: 'topRight',
         progressBarColor: 'rgb(181, 27, 27)',
         backgroundColor: 'rgb(239, 64, 64)',
         iconUrl: iconError,

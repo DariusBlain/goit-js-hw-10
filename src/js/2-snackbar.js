@@ -17,6 +17,8 @@ import 'izitoast/dist/css/iziToast.min.css';
 import iconError from '../img/error.svg';
 import iconSucces from '../img/succes.svg';
 
+/////////////////////////////////////////////////////////////////
+
 const form = document.querySelector('.form');
 
 function createPromise(event) {
@@ -29,7 +31,7 @@ function createPromise(event) {
       setTimeout(() => {
         resolve(
           iziToast.success({
-            position: 'topRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
+            position: 'topRight',
             progressBarColor: 'rgb(50, 97, 1)',
             backgroundColor: 'rgb(89, 161, 13)',
             iconUrl: iconSucces,
@@ -42,7 +44,7 @@ function createPromise(event) {
       setTimeout(() => {
         reject(
           iziToast.error({
-            position: 'topRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
+            position: 'topRight',
             progressBarColor: 'rgb(181, 27, 27)',
             backgroundColor: 'rgb(239, 64, 64)',
             iconUrl: iconError,
