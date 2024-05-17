@@ -4,6 +4,8 @@ import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+import iconError from '../img/error.svg';
+
 //______________________________________________________________________
 
 const input = document.querySelector('#datetime-picker');
@@ -27,7 +29,7 @@ const options = {
         position: 'topRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
         progressBarColor: 'rgb(181, 27, 27)',
         backgroundColor: 'rgb(239, 64, 64)',
-        iconUrl: '../img/error.svg',
+        iconUrl: iconError,
         message: 'Please choose a date in the future',
         messageColor: 'rgb(255, 255, 255)',
       });

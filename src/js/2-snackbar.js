@@ -14,6 +14,9 @@ incrementBtn.addEventListener('click', () => {
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+import iconError from '../img/error.svg';
+import iconSucces from '../img/succes.svg';
+
 const form = document.querySelector('.form');
 
 function createPromise(event) {
@@ -29,7 +32,7 @@ function createPromise(event) {
             position: 'topRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
             progressBarColor: 'rgb(50, 97, 1)',
             backgroundColor: 'rgb(89, 161, 13)',
-            iconUrl: '../img/succes.svg',
+            iconUrl: iconSucces,
             message: `Fulfilled promise in ${delay} ms`,
             messageColor: 'rgb(255, 255, 255)',
           })
@@ -42,7 +45,7 @@ function createPromise(event) {
             position: 'topRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
             progressBarColor: 'rgb(181, 27, 27)',
             backgroundColor: 'rgb(239, 64, 64)',
-            iconUrl: '../img/error.svg',
+            iconUrl: iconError,
             message: `Rejected promise in ${delay} ms`,
             messageColor: 'rgb(255, 255, 255)',
           })
