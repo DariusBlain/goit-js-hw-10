@@ -29,32 +29,36 @@ function createPromise(event) {
   return new Promise((resolve, reject) => {
     if (state === 'fulfilled') {
       setTimeout(() => {
-        resolve(
-          iziToast.success({
-            position: 'topRight',
-            progressBarColor: 'rgb(50, 97, 1)',
-            backgroundColor: 'rgb(89, 161, 13)',
-            iconUrl: iconSucces,
-            message: `Fulfilled promise in ${delay} ms`,
-            messageColor: 'rgb(255, 255, 255)',
-          })
-        );
+        resolve(`Fulfilled promise in ${delay} ms`);
       }, delay);
     } else {
       setTimeout(() => {
-        reject(
-          iziToast.error({
-            position: 'topRight',
-            progressBarColor: 'rgb(181, 27, 27)',
-            backgroundColor: 'rgb(239, 64, 64)',
-            iconUrl: iconError,
-            message: `Rejected promise in ${delay} ms`,
-            messageColor: 'rgb(255, 255, 255)',
-          })
-        );
+        reject(`Rejected promise in ${delay} ms`);
       }, delay);
     }
   });
 }
 
-form.addEventListener('submit', createPromise);
+form.addEventListener('submit', event => {
+  createPromise(event)
+    .then(message => {
+      iziToast.success({
+        position: 'topRight',
+        progressBarColor: 'rgb(50, 97, 1)',
+        backgroundColor: 'rgb(89, 161, 13)',
+        iconUrl: iconSucces,
+        message: message,
+        messageColor: 'rgb(255, 255, 255)',
+      });
+    })
+    .catch(message => {
+      iziToast.error({
+        position: 'topRight',
+        progressBarColor: 'rgb(181, 27, 27)',
+        backgroundColor: 'rgb(239, 64, 64)',
+        iconUrl: iconError,
+        message: message,
+        messageColor: 'rgb(255, 255, 255)',
+      });
+    });
+});
